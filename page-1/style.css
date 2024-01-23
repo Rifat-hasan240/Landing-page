@@ -1,0 +1,101 @@
+/* common code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* common code end */
+/*landing page start */
+#landing {
+  background-image: url(img/images.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+}
+/* nav code start */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  margin-left: 15px;
+}
+nav a {
+  font-size: 2rem;
+  color: black;
+  text-transform: uppercase;
+}
+.nav-icon {
+  background-color: #d76ba9;
+  color: white;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  border-radius: 200px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+/* nav code end */
+/* article code start */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+  margin-top: 200px;
+}
+article h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+article p {
+  font-size: 1.2rem;
+  width: 700px;
+}
+article button {
+  border: none;
+  width: 200px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #d76ba9;
+  margin-top: 10px;
+}
+/* article code end */
+/*landing page end */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  #landing {
+    background-position: left center;
+  }
+  /* nav code start */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  nav li {
+    margin-bottom: 20px;
+  }
+  /* nav code end */
+  article {
+    float: left;
+  }
+  article p {
+    width: fit-content;
+  }
+}
