@@ -53,7 +53,7 @@ nav ul li:hover .services-item {
   display: block;
 }
 .services-item a {
-  color: black;
+  color:black;
 }
 .services-item a:hover {
   text-decoration: underline;
@@ -90,7 +90,7 @@ article span {
   color: #fbbe24;
 }
 article p {
-  color: black;
+  color:white;
   font-size: 1.1rem;
 }
 article sup{
@@ -101,6 +101,7 @@ article sup{
   text-align: center;
   font-size: 1.3rem;
   border: none;
+  padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
