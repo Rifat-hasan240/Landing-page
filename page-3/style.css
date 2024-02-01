@@ -1,0 +1,159 @@
+/* common code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  outline: 0;
+}
+body {
+  background-color: #20374b;
+}
+/* common code end */
+/* nav code start */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+}
+.first {
+  color: #fbbe24;
+}
+nav a {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.service-icon {
+  color: #fbbe24;
+  font-size: 1.5rem;
+}
+nav li {
+  margin-left: 15px;
+}
+.services-item {
+  display: none;
+  border-radius: 10px;
+  padding: 5px;
+  height: 120px;
+  background-color: #fbbe24;
+}
+nav ul li:hover .services-item {
+  display: block;
+  position: absolute;
+}
+.services-item ul {
+  display: block;
+}
+.services-item a {
+  color: black;
+}
+.services-item a:hover {
+  text-decoration: underline;
+}
+.services-item li {
+  margin-bottom: 5px;
+}
+.nav-last-icon {
+  background-color: #fbbe24;
+  border: 3px solid #5f654b;
+  border-radius: 100px;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+}
+/* nav code end */
+/* main code start */
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+article {
+  text-align: center;
+  flex: 5;
+}
+article h1 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+article span {
+  color: #fbbe24;
+}
+article p {
+  color: black;
+  font-size: 1.1rem;
+}
+article sup{
+    color: #fbbe24;
+}
+.form-item input {
+  width: 250px;
+  text-align: center;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fbbe24;
+}
+.form-item button {
+  width: 120px;
+  border: none;
+  font-size: 1.1rem;
+  background-color: #fbbe24;
+  border-radius: 5px;
+}
+aside {
+  flex: 5;
+  text-align: center;
+}
+.aside-img {
+  width: 50%;
+  border: 4px solid #fbbe24;
+  border-bottom-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+/* main code end */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  /* nav code start */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  nav li {
+    margin-bottom: 10px;
+  }
+  /* nav code end */
+  /* main code start */
+  #main {
+    flex-direction: column;
+  }
+  article {
+    width: 100%;
+  }
+  aside {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .aside-img {
+    width: 90%;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  /* main code end */
+}
