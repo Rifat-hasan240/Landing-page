@@ -1,0 +1,408 @@
+/* common code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  outline: 0;
+}
+#container {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0.1rem 0.2rem 0.8rem #000;
+}
+.item-center {
+  display: flex;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.header h2 {
+  text-align: center;
+  padding: 20px;
+  padding-top: 40px;
+  font-family: "Italianno", cursive;
+}
+/* common code end */
+/* Navbar code start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f0f0f;
+  color: #f2f2f2;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+}
+nav a,
+nav h2 {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+nav a:hover {
+  background-color: #252628;
+  padding: 10px;
+  border-radius: 5px;
+}
+.Login-nav {
+  margin-left: -30px;
+}
+/* information hover code start */
+.infoformation-hover {
+  background-color: #252628;
+  position: absolute;
+  border-radius: 5px;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+.infoformation-hover ul {
+  display: block;
+}
+.infoformation-hover li {
+  margin-bottom: 15px;
+}
+nav li:hover .infoformation-hover {
+  visibility: visible;
+  opacity: 1;
+}
+/* information hover code end */
+/* mega manu code start */
+.mega-manu {
+  position: absolute;
+  top: 80px;
+  left: 95px;
+  width: 90%;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.mega-manu ul {
+  display: block;
+  border-left: 5px solid red;
+  border-radius: 10px;
+}
+.mega-manu .contant {
+  background-color: #252628;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+nav li:hover .mega-manu {
+  visibility: visible;
+}
+.row header {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.row li {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+/* mega manu code end */
+/* Navbar code end */
+
+/* baner section code start */
+.baner {
+  background-image: url(img/slider-1.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* baner section code end */
+
+/* about me section code start */
+#about-section {
+  display: flex;
+}
+#about-section article {
+  flex: 5;
+  color: black;
+}
+#about-section aside {
+  flex: 5;
+}
+#about-section aside img {
+  width: 100%;
+  border-top-left-radius: 500px;
+  border-bottom-right-radius: 200px;
+  border: 4px solid #ffbc3a;
+}
+#about-section article h1,
+h2,
+button {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+#about-section article span {
+  color: #a98435;
+}
+#about-section p {
+  font-size: 1.5rem;
+}
+#about-section button {
+  width: 100px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+#about-more-btn {
+  background-color: #7c68ee;
+}
+#about-cv-btn {
+  background-color: #ffbc3a;
+}
+/* about me section code end */
+
+/* card section code start */
+.contant {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+/* aside code start */
+.item {
+  box-shadow: 0.1rem 0.1rem 0.8rem black;
+  width: 280px;
+  height: 230px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.item i {
+  font-size: 2rem;
+}
+.item button {
+  width: 150px;
+  font-size: 1.3rem;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #6300a4;
+  text-transform: uppercase;
+  color: white;
+}
+/* aside code end */
+/* article code start */
+.item button {
+  width: 200px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #b479d5;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+/* article code end */
+/* card section code end */
+
+/* contact section code start */
+.contact-section article {
+  flex: 5;
+}
+.contact-section article input {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  text-transform: lowercase;
+  border-radius: 5px;
+  border: 2px solid #ffbc3a;
+}
+.contact-section article textarea {
+  border-radius: 5px;
+  border: 2px solid #ffbc3a;
+}
+.contact-section article button {
+  width: 100px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: #edd18c;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.about-item i {
+  margin-left: -30px;
+}
+.contact-section aside {
+  flex: 5;
+}
+.contact-section aside img {
+  width: 100%;
+}
+/* contact section code end */
+
+/* footer section code start */
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 200px;
+  background-color: #252628;
+}
+.footer-section article img {
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.footer-section aside .link a {
+  font-size: 1.3rem;
+  color: white;
+}
+.footer-section aside .link a:hover {
+  color: green;
+  text-decoration: overline;
+}
+.footer-section p {
+  font-size: 1.3rem;
+  color: green;
+}
+/* footer section code end */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  /* common code start */
+  #container {
+    width: 100%;
+  }
+  /* common code end */
+
+  /*navbar code start  */
+  nav {
+    display: block;
+    text-align: center;
+  }
+  nav li {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  nav ul {
+    display: block;
+  }
+  .mega-link {
+    margin-bottom: 0;
+  }
+  .mega-manu {
+    top: 390px;
+    left: 0;
+    width: 100%;
+  }
+  .mega-manu .contant {
+    flex-direction: column;
+  }
+  /*navbar code end  */
+
+  /* baner section code start */
+  .baner {
+    background-position: center left;
+  }
+  /* baner section code end */
+
+  /* about me section code start */
+  #about-section {
+    flex-direction: column;
+  }
+  #about-section aside img {
+    width: 100%;
+    height: 500px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  /* about me section code start */
+
+  /* card section code start */
+  .card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* card section code end */
+  /* contact section code start */
+  .contact-section {
+    flex-direction: column;
+  }
+  /* contact section code end */
+
+  /* footer section code start */
+  .footer-section {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 0px;
+    text-align: center;
+  }
+  /* footer section code end */
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  /* navbar code start */
+  .mega-manu {
+    top: 400px;
+    left: 0px;
+    width: 100%;
+  }
+  /* navbar code end */
+
+  /* about me section code start */
+  #about-section {
+    margin-top: 200px;
+  }
+  #about-section article {
+    margin-bottom: 20px;
+  }
+  #about-more-btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  /* about me section code end */
+
+  /* card section code start */
+  .card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* card section code end */
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* about me section code start */
+  #about-section {
+    margin-top: 500px;
+  }
+  #about-section article {
+    margin-bottom: 20px;
+  }
+  #about-section aside {
+    margin-bottom: 300px;
+  }
+  /* about me section code end */
+
+  /* card section code start */
+  .item {
+    width: 250px;
+    height: 250px;
+  }
+  .card {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .card-first {
+    margin-top: 160px;
+  }
+  /* card section code end */
+}
